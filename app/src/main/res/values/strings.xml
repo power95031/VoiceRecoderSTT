@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VoiceRecoderSTT</string>
+
+    <string name="permissionDeniedMessage">실행을 위한 권한이 필요합니다. [설정]-[앱 관리]-[권한]</string>
+
+</resources>
