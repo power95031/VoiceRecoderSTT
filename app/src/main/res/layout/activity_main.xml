@@ -20,7 +20,7 @@
     <com.example.voicerecoderstt.Utils.SoundVisualizerView
         android:id="@+id/SoundWaveFormView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:layout_marginHorizontal="15dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/RecordButton"

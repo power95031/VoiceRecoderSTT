@@ -2,6 +2,7 @@ package com.example.voicerecoderstt
 
 import android.app.ProgressDialog
 import android.content.Context
+import android.content.Intent
 import android.media.MediaRecorder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -35,7 +36,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        binding.RecordButton.setBackgroundResource(R.drawable.record_button_background)
+        binding.RecordButton.apply {
+            setBackgroundResource(R.drawable.record_button_background)
+            setImageResource(R.drawable.ic_record)
+        }
 
         progressDialog = ProgressDialog(context).apply {
             setCancelable(false)
@@ -61,7 +65,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun startRecording() {
         val fileName = "${System.currentTimeMillis()}.mp3"
-        outputFile = File(context.cacheDir, fileName)
+        //outputFile = File(context.cacheDir, fileName)
+        outputFile = File(applicationContext.getExternalFilesDir(null), fileName)
 
         mediaRecorder = MediaRecorder().apply {
             setAudioSource(MediaRecorder.AudioSource.MIC)
@@ -91,6 +96,12 @@ class MainActivity : AppCompatActivity() {
 
         if(!recordState && outputFile!=null) {
             if(outputFile!!.exists()) {
+                val intent = Intent(context, ResultViewActivity::class.java).apply {
+                    putExtra("filePath", outputFile!!.path)
+                    putExtra("fileAbsolutePath", outputFile!!.absolutePath)
+                    putExtra("fileName", outputFile!!.name)
+                }
+                startActivity(intent)
             }
         }
     }

@@ -11,6 +11,7 @@ import android.widget.Toast
 import com.example.voicerecoderstt.databinding.ActivityIntroBinding
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
+import java.io.File
 
 class IntroActivity : AppCompatActivity() {
 
@@ -38,6 +39,8 @@ class IntroActivity : AppCompatActivity() {
     private fun checkPermissions() {
         val permissionListener = object : PermissionListener {
             override fun onPermissionGranted() {
+                val dir = applicationContext.getExternalFilesDir(null)
+
                 val intent = Intent(context, MainActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
                 startActivity(intent)
