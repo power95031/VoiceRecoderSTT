@@ -19,6 +19,9 @@
         android:theme="@style/Theme.VoiceRecoderSTT"
         tools:ignore="DataExtractionRules">
         <activity
+            android:name=".PastDataViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ResultViewActivity"
             android:exported="false" />
         <activity

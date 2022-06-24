@@ -8,5 +8,37 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="color151515">#151515</color>
+    <color name="color999999">#999999</color>
     <color name="color888888">#888888</color>
+    <color name="color8A8A8A">#8a8a8a</color>
+    <color name="color717171">#717171</color>
+    <color name="color424242">#424242</color>
+    <color name="colorA6A7A7">#A6A7A7</color>
+    <color name="colorCBCBCB">#cbcbcb</color>
+    <color name="colorB1B1B1">#b1b1b1</color>
+    <color name="colorD8D8D8">#d8d8d8</color>
+    <color name="colorCCCED3">#ccced3</color>
+    <color name="colorC1C2C7">#c1c2c7</color>
+    <color name="colorF6F6F6">#f6f6f6</color>
+    <color name="colorF1F1F1">#f1f1f1</color>
+    <color name="colorCECECE">#cecece</color>
+    <color name="colorC8C8C8">#c8c8c8</color>
+    <color name="colorEDEDED">#ededed</color>
+    <color name="colorE2E2E2">#e2e2e2</color>
+    <color name="color00DAAA">#00daaa</color>
+    <color name="color00C096">#00C096</color>
+    <color name="color00B990">#00b990</color>
+    <color name="color5289ff">#5289ff</color>
+    <color name="color4D5EFF">#4d5eff</color>
+    <color name="color4D84FF">#4d84ff</color>
+    <color name="color1662B5">#1662b5</color>
+    <color name="color399CFF">#399cff</color>
+    <color name="colorFFDD62">#ffdd62</color>
+    <color name="colorFF5556">#FF5556</color>
+    <color name="colorE32222">#e32222</color>
+    <color name="color19000000">#19000000</color>
+    <color name="colorTransfer">#00FFFFFF</color>
 </resources>
